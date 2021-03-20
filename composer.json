@@ -1,7 +1,39 @@
 [
   {
+    "name": "data-scrambler",
+    "description": "A secure encoding & decoding platform",
+    "keywords": ["encode","decode","data-scrambler"],
+    "homepage": "",
+    "license": "",
+    "authors": [
+        {
+            "name": "Ashik Faisal",
+            "email": "ash.faisal7@gmail.com",
+            "homepage": ""
+        }
+    ],
+    "repositories": [
+        {
+            "type": "",
+            "url": "https://github.com/AshikFaisal/Data-Scrambler.git"
+        }
+    ],
     "require": {
-        "monolog/monolog": "1.0.1"
+        "php": ">=8.0.1",
+        "monolog/monolog": "~1.6",
+        "tuupola/slim-fake-mcrypt": "dev-master",
+        "slim/slim": "~2.3",
+        "slim/views": "0.*",
+        "twig/twig": "~1.13",
+        "ruflin/elastica": "v0.90.2.0",
+        "knplabs/github-api": "*"
+    },
+    "extra": {
+        "heroku": {
+            "framework": "slim",
+            "document-root": "public",
+            "index-document": "index.php"
+        }
     }
 }
 ]
